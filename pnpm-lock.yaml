@@ -1,18 +1,18 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@commitlint/cli': ^14.1.0
-  '@commitlint/config-conventional': ^14.1.0
-  chokidar-cli: ^3.0.0
-  cross-env: ^7.0.3
-  eslint: ^8.2.0
+  '@commitlint/cli': 14.1.0
+  '@commitlint/config-conventional': 14.1.0
+  chokidar-cli: 3.0.0
+  cross-env: 7.0.3
+  eslint: 8.2.0
   eslint-config-tuxsnct: latest
-  husky: ^7.0.4
-  lint-staged: ^12.0.2
-  mkdirp: ^1.0.4
-  npm-run-all: ^4.1.5
-  rimraf: ^3.0.2
-  wait-on: ^6.0.0
+  husky: 7.0.4
+  lint-staged: 12.0.3
+  mkdirp: 1.0.4
+  npm-run-all: 4.1.5
+  rimraf: 3.0.2
+  wait-on: 6.0.0
 
 devDependencies:
   '@commitlint/cli': 14.1.0
@@ -22,7 +22,7 @@ devDependencies:
   eslint: 8.2.0
   eslint-config-tuxsnct: 3.4.2_eslint@8.2.0
   husky: 7.0.4
-  lint-staged: 12.0.2
+  lint-staged: 12.0.3
   mkdirp: 1.0.4
   npm-run-all: 4.1.5
   rimraf: 3.0.2
@@ -262,7 +262,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.9
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.14.5
       '@babel/plugin-syntax-object-rest-spread': 7.8.3_@babel+core@7.12.9
       '@babel/plugin-transform-parameters': 7.16.3_@babel+core@7.12.9
     dev: true
@@ -318,7 +318,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.9
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.14.5
     dev: true
 
   /@babel/plugin-syntax-logical-assignment-operators/7.10.4_@babel+core@7.16.0:
@@ -354,7 +354,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.9
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.14.5
     dev: true
 
   /@babel/plugin-syntax-object-rest-spread/7.8.3_@babel+core@7.16.0:
@@ -363,7 +363,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.16.0
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.14.5
     dev: true
 
   /@babel/plugin-syntax-optional-catch-binding/7.8.3_@babel+core@7.16.0:
@@ -4137,8 +4137,8 @@ packages:
     resolution: {integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=}
     dev: true
 
-  /lint-staged/12.0.2:
-    resolution: {integrity: sha512-tpCvACqc7bykziGJmXG0G8YG2RaCrWiDBwmrP9wU7i/3za9JMOvCECQmXjw/sO4ICC70ApVwyqixS1htQX9Haw==}
+  /lint-staged/12.0.3:
+    resolution: {integrity: sha512-/NwNQjrhqz+AjV+e0URbtphvpHNcNdR/W6p9GxO+qIg7cxCxy0uKYO0xORQhZamp1BPjIhRUWsjbLnwEIiPHgQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -4147,18 +4147,17 @@ packages:
       commander: 8.3.0
       cosmiconfig: 7.0.1
       debug: 4.3.2_supports-color@9.0.2
+      enquirer: 2.3.6
       execa: 5.1.1
-      listr2: 3.13.3
+      listr2: 3.13.3_enquirer@2.3.6
       micromatch: 4.0.4
       normalize-path: 3.0.0
       object-inspect: 1.11.0
       string-argv: 0.3.1
       supports-color: 9.0.2
-    transitivePeerDependencies:
-      - enquirer
     dev: true
 
-  /listr2/3.13.3:
+  /listr2/3.13.3_enquirer@2.3.6:
     resolution: {integrity: sha512-VqAgN+XVfyaEjSaFewGPcDs5/3hBbWVaX1VgWv2f52MF7US45JuARlArULctiB44IIcEk3JF7GtoFCLqEdeuPA==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
@@ -4167,6 +4166,7 @@ packages:
       cli-truncate: 2.1.0
       clone: 2.1.2
       colorette: 2.0.16
+      enquirer: 2.3.6
       log-update: 4.0.0
       p-map: 4.0.0
       rxjs: 7.4.0
