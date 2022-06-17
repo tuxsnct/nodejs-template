@@ -19,7 +19,7 @@
     "lint:fix": "npm run lint --fix"
   },
   "devDependencies": {
-    "eslint": "8.14.0",
+    "eslint": "8.18.0",
     "eslint-config-tuxsnct": "latest"
   }
 }
